@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour {
 
     [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] int startingWave = 0; //Serialized for debugging
-    //TODO: Add SerializeField Spawn Delay (wait x before restarting loop)
+    [SerializeField] float spawnDelay = 3f;
     [SerializeField] bool looping = false;
 
 	// Use this for initialization
