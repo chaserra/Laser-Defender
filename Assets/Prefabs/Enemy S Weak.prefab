@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114842248252012726}
   - component: {fileID: 114109526046954508}
   m_Layer: 9
-  m_Name: Enemy S
+  m_Name: Enemy S Weak
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,8 +117,8 @@ MonoBehaviour:
   health: 100
   scorePerKill: 100
   projectile: {fileID: 1520098498223492, guid: 03b8709b1c4f22448b6891496c14d26a, type: 2}
-  minTimeBetweenShots: 0.8
-  maxTimeBetweenShots: 1.5
+  minTimeBetweenShots: 0.5
+  maxTimeBetweenShots: 1
   projectileSpeed: 5
   powerUpDrop:
   - {fileID: 1278493521466836, guid: 25da26255b74cb847b2096fcb381b7b6, type: 2}
