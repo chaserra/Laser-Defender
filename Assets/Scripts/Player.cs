@@ -22,7 +22,7 @@ public class Player : MonoBehaviour {
 
     [Header("Projectile")]
     [SerializeField] GameObject playerLaser;
-    [SerializeField] public int laserLevel = 1;
+    [SerializeField] int laserLevel = 1;
     int maxLaserLevel = 5;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileFiringPeriod = 0.5f;
@@ -255,5 +255,9 @@ public class Player : MonoBehaviour {
 
     public int GetNumberOfShields() {
         return numberOfShields;
+    }
+
+    public int GetLaserLevel() {
+        return laserLevel;
     }
 }
