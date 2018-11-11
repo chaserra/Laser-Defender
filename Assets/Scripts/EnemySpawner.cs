@@ -45,12 +45,6 @@ public class EnemySpawner : MonoBehaviour {
         }
     }
 
-    //TODO Check player's laser level use Get Method (Player). 
-    //Break weak loop when level two then spawn harder enemies
-    //IDEA: limit waves at start, remove limit when levelled up.
-    //IDEA (cont.) at level 2, remove lower limit (to remove weaker enemies).
-    //IDEA (cont.) at level 2, spawn bombers
-    //IDEA Boss at level 3.
-    //IDEA Chaos at level 4. Faster enemies, faster fire rate.
-    //IDEA Final boss at level 5.
+    //TODO rework waves. balance more
+    //TODO Final boss at level 5.
 }
