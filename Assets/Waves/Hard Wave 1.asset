@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6faf9aad600cbdf48b5b1122452b8d2b, type: 3}
-  m_Name: Easy Wave 1
+  m_Name: Hard Wave 1
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1457555493833386, guid: 8bd275eb34eacc6479ea24f3a34f051c,
+  enemyPrefab: {fileID: 1457555493833386, guid: f20feaebf861b364d81651100c403ec2,
     type: 2}
-  pathPrefab: {fileID: 1711572558046290, guid: ff149a1460c1f744e9a174f88196357f, type: 2}
-  timeBetweenSpawns: 0.7
+  pathPrefab: {fileID: 1322972560782098, guid: 9795b6e56c5f8d645a6ab5e8f0b11d75, type: 2}
+  timeBetweenSpawns: 1
   spawnRandomFactor: 0.3
-  numberOfEnemies: 5
-  moveSpeed: 3
+  numberOfEnemies: 20
+  moveSpeed: 3.5

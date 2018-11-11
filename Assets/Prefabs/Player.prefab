@@ -206,7 +206,7 @@ MonoBehaviour:
   invincible: 0
   playerLaser: {fileID: 1934069342524174, guid: 351cdadfb50fa4446849337e09ab6a36,
     type: 2}
-  laserLevel: 1
+  laserLevel: 2
   projectileSpeed: 20
   projectileFiringPeriod: 0.5
   maxFireRate: 0.2
