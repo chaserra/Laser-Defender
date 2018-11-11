@@ -117,13 +117,13 @@ MonoBehaviour:
   health: 100
   scorePerKill: 100
   projectile: {fileID: 1520098498223492, guid: 03b8709b1c4f22448b6891496c14d26a, type: 2}
-  minTimeBetweenShots: 0.8
-  maxTimeBetweenShots: 1.5
+  minTimeBetweenShots: 0.5
+  maxTimeBetweenShots: 1
   projectileSpeed: 5
   powerUpDrop:
   - {fileID: 1278493521466836, guid: 25da26255b74cb847b2096fcb381b7b6, type: 2}
   powerUpDropSpeed: 3.5
-  dropRate: 10
+  dropRate: 3
   explosionParticle: {fileID: 1519627711204672, guid: 1eac2b27a27a5a247b796fdacde77827,
     type: 2}
   durationOfExplosion: 1
