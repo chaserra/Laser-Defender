@@ -45,5 +45,6 @@ public class EnemySpawner : MonoBehaviour {
         }
     }
 
+    //TODO rework waves. balance more
     //TODO Final boss at level 5.
 }
