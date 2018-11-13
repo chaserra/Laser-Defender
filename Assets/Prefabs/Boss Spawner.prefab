@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1409939057481738}
+  m_RootGameObject: {fileID: 1464594875730094}
   m_IsPrefabAsset: 1
---- !u!1 &1409939057481738
+--- !u!1 &1464594875730094
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4981334178182192}
-  - component: {fileID: 114754089579323230}
+  - component: {fileID: 4709256840736902}
+  - component: {fileID: 114217784215978482}
   m_Layer: 0
-  m_Name: Medium Enemy Spawner
+  m_Name: Boss Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4981334178182192
+--- !u!4 &4709256840736902
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1409939057481738}
+  m_GameObject: {fileID: 1464594875730094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,28 +40,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114754089579323230
+--- !u!114 &114217784215978482
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1409939057481738}
+  m_GameObject: {fileID: 1464594875730094}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 088708f1cd416094b9094714ece298e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfigs:
-  - {fileID: 11400000, guid: 55574222388966844985fd0a1393ac4f, type: 2}
-  - {fileID: 11400000, guid: b768cdad9542ee34aa97ce98c140cac2, type: 2}
-  - {fileID: 11400000, guid: 7560d09ac187dd541a5b190560feaa96, type: 2}
-  - {fileID: 11400000, guid: 6e66a954887198146b43fdb67e5358b5, type: 2}
-  - {fileID: 11400000, guid: 2633708e88abd4a46aa7c7a0680a23c1, type: 2}
-  - {fileID: 11400000, guid: 8919f83174dbba343b0d09f67d20725c, type: 2}
-  - {fileID: 11400000, guid: f3b27fdf6b7482946b29548ce0b07251, type: 2}
-  - {fileID: 11400000, guid: 07b30268c7298424ea6b9377b5bf991d, type: 2}
-  - {fileID: 11400000, guid: 7de8b47f7941a444690d69fbe281fea7, type: 2}
-  spawnDelay: 2.5
-  activatesAtLevel: 2
-  stopsAtLevel: 5
-  looping: 1
+  - {fileID: 11400000, guid: ca252a431082b3a44a635ed28218b39f, type: 2}
+  spawnDelay: 5
+  activatesAtLevel: 5
+  stopsAtLevel: 6
+  looping: 0
