@@ -156,8 +156,8 @@ MonoBehaviour:
   health: 900
   scorePerKill: 750
   projectile: {fileID: 1717115009289256, guid: bb2218fe5d008414ab04512d7da4ac99, type: 2}
-  minTimeBetweenShots: 1.1
-  maxTimeBetweenShots: 2.1
+  minTimeBetweenShots: 1.3
+  maxTimeBetweenShots: 2.5
   projectileSpeed: 2.5
   powerUpDrop:
   - {fileID: 1278493521466836, guid: 25da26255b74cb847b2096fcb381b7b6, type: 2}

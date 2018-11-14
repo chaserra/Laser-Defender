@@ -21,12 +21,12 @@ GameObject:
   - component: {fileID: 4720216245549564}
   - component: {fileID: 212771379513859458}
   - component: {fileID: 50379412307786636}
-  - component: {fileID: 58481895905417292}
+  - component: {fileID: 60062407932836774}
   - component: {fileID: 114216020702747926}
   - component: {fileID: 114229118616095076}
   - component: {fileID: 114190466673120686}
   m_Layer: 9
-  m_Name: Enemy M
+  m_Name: Enemy L Hard
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1457555493833386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6146811, y: 2.733, z: 0}
+  m_LocalPosition: {x: -1.5045307, y: -0.8555129, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,8 +65,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58481895905417292
-CircleCollider2D:
+--- !u!60 &60062407932836774
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -77,9 +77,48 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.42088938
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.325, y: 2.1}
+    newSize: {x: 1.04, y: 0.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.35559082, y: -0.30638164}
+      - {x: 0.3747362, y: -0.24150854}
+      - {x: 0.46460938, y: -0.26012713}
+      - {x: 0.36302733, y: -0.5122364}
+      - {x: 0.31993663, y: -0.63829106}
+      - {x: 0.24440897, y: -0.911709}
+      - {x: 0.3880272, y: -0.99309105}
+      - {x: 0.45026362, y: -1.0117092}
+      - {x: 0.62368166, y: -1.0372365}
+      - {x: 0.7098635, y: -0.78243655}
+      - {x: 0.88169944, y: -0.33021945}
+      - {x: 1.1625, y: 0.39736325}
+      - {x: 0.945991, y: 0.75110805}
+      - {x: 0.71039075, y: 1.0436181}
+      - {x: 0.7411913, y: 1.0500004}
+      - {x: 0.25664544, y: 0.8351272}
+      - {x: 0.20664549, y: 0.5883448}
+      - {x: -0.224859, y: 0.60836446}
+      - {x: -0.26410007, y: 0.82569355}
+      - {x: -0.6906643, y: 1.0308547}
+      - {x: -0.7545364, y: 1.0308543}
+      - {x: -1.1497364, y: 0.3904546}
+      - {x: -0.63280797, y: -1.035439}
+      - {x: -0.62315464, y: -1.0500002}
+      - {x: -0.26571786, y: -0.90959996}
+      - {x: -0.44599128, y: -0.28470725}
+      - {x: -0.39171863, y: -0.24161631}
+      - {x: -0.31174183, y: -0.39349574}
+      - {x: 0.29973638, y: -0.39841813}
+      - {x: 0.3178271, y: -0.40000004}
 --- !u!114 &114190466673120686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,25 +153,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d7603c83118c94c8b03486c39ae017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
-  scorePerKill: 200
-  projectile: {fileID: 1520098498223492, guid: 03b8709b1c4f22448b6891496c14d26a, type: 2}
-  minTimeBetweenShots: 1
-  maxTimeBetweenShots: 2.2
-  projectileSpeed: 5
+  health: 1400
+  scorePerKill: 2500
+  projectile: {fileID: 1717115009289256, guid: bb2218fe5d008414ab04512d7da4ac99, type: 2}
+  minTimeBetweenShots: 1.2
+  maxTimeBetweenShots: 2.3
+  projectileSpeed: 2.5
   powerUpDrop:
-  - {fileID: 1278493521466836, guid: 529894a436150924e9af21ae5011a8a5, type: 2}
-  - {fileID: 1278493521466836, guid: ad507681c5c509d459fc670a0ee5d9ca, type: 2}
+  - {fileID: 1278493521466836, guid: 25da26255b74cb847b2096fcb381b7b6, type: 2}
   powerUpDropSpeed: 3.5
-  dropRate: 10
+  dropRate: 12
   explosionParticle: {fileID: 1519627711204672, guid: 1eac2b27a27a5a247b796fdacde77827,
     type: 2}
   durationOfExplosion: 1
-  laserSFX: {fileID: 8300000, guid: 9faf48d5fbbcab349b5d84a802b16b10, type: 3}
+  laserSFX: {fileID: 8300000, guid: e749e81f616ba234bab38a24bfbe3e21, type: 3}
   deathSFX: {fileID: 8300000, guid: 219824229e058114ca0f845ed4b9ea30, type: 3}
   hitSFX: {fileID: 8300000, guid: e4572bf41232d844b82ae3b59d6d989f, type: 3}
-  laserSoundVolume: 0.2
-  deathSoundVolume: 0.3
+  laserSoundVolume: 0.3
+  deathSoundVolume: 0.5
   hitsSoundVolume: 0.4
 --- !u!212 &212771379513859458
 SpriteRenderer:
@@ -169,7 +207,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 942bb7f4aa85034448ad9aefc4658c92, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ea21edd089e5a740b920c4aa8dd262b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

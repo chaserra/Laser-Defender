@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114493862991598014}
   m_Layer: 9
   m_Name: Boss
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,11 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d7603c83118c94c8b03486c39ae017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1000000
+  health: 500000
   scorePerKill: 5000000
   projectile: {fileID: 1143646564120360, guid: dd62b779093e8f847ba354bca76caa8b, type: 2}
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 1
+  minTimeBetweenShots: 0.7
+  maxTimeBetweenShots: 3
   projectileSpeed: 3
   powerUpDrop: []
   powerUpDropSpeed: 3.5

@@ -51,5 +51,5 @@ public class EnemySpawner : MonoBehaviour {
         }
     }
 
-    //TODO Make Boss Pathing (not self-destructing on last point).
+    //TODO Make boss spawn
 }
