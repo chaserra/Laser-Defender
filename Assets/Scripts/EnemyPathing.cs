@@ -35,6 +35,11 @@ public class EnemyPathing : MonoBehaviour {
 
             if (transform.position == targetPosition) {
                 waypointIndex++;
+                if(gameObject.tag == "Boss") {
+                    if(waypointIndex == waypoints.Count) {
+                        waypointIndex = 0;
+                    }
+                }
             }
         } else {
             Destroy(gameObject);

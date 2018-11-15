@@ -5,10 +5,12 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
 
     [SerializeField] List<WaveConfig> waveConfigs;
-    [SerializeField] int startingWave = 0; //Serialized for debugging
+    int startingWave = 0;
     [SerializeField] float spawnDelay = 1.5f;
     [SerializeField] int activatesAtLevel = 1;
+    [SerializeField] int stopsAtLevel = 5;
     [SerializeField] bool looping = false;
+    int bossSpawnAtLaserLevel = 5;
 
     //Cached References
     Player player;
@@ -26,9 +28,15 @@ public class EnemySpawner : MonoBehaviour {
             yield return new WaitForSeconds(2f);
             Debug.Log(gameObject.name + " Activated!");
             for (int waveIndex = startingWave; waveIndex < waveConfigs.Count; waveIndex++) {
-                var currentWave = waveConfigs[waveIndex];
-                yield return new WaitForSeconds(spawnDelay);
-                yield return StartCoroutine(SpawnAllEnemiesInWave(currentWave));
+                if(player.GetLaserLevel() >= stopsAtLevel) {
+                    Debug.Log(gameObject.name + " Deactivated!");
+                    Destroy(gameObject);
+                    yield break;
+                } else {
+                    var currentWave = waveConfigs[waveIndex];
+                    yield return new WaitForSeconds(spawnDelay);
+                    yield return StartCoroutine(SpawnAllEnemiesInWave(currentWave));
+                }
             }
         }
     }
@@ -44,7 +52,4 @@ public class EnemySpawner : MonoBehaviour {
             yield return new WaitForSeconds(waveConfig.GetTimeBetweenSpawns());
         }
     }
-
-    //TODO rework waves. balance more
-    //TODO Final boss at level 5.
 }

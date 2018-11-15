@@ -65,7 +65,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: af1b55fa2965bca4cbdb3b337bd2a7a6, type: 2}
   - {fileID: 11400000, guid: 956f7b5cb3b62e645a408cafc2d34e9d, type: 2}
   - {fileID: 11400000, guid: 96fe869d16a181a4d8b20860695be745, type: 2}
-  startingWave: 0
   spawnDelay: 2.5
   activatesAtLevel: 1
+  stopsAtLevel: 3
   looping: 1

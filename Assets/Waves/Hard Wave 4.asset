@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6faf9aad600cbdf48b5b1122452b8d2b, type: 3}
   m_Name: Hard Wave 4
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1457555493833386, guid: f28638556e53ed8419cf0e29cd86a299,
+  enemyPrefab: {fileID: 1457555493833386, guid: 6f476038cc6897841b75d23afd350e0b,
     type: 2}
   pathPrefab: {fileID: 1669392608129270, guid: ba691b52d6b795346908bef47e479f2a, type: 2}
   timeBetweenSpawns: 1

@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1264497596312914}
+  m_RootGameObject: {fileID: 1464594875730094}
   m_IsPrefabAsset: 1
---- !u!1 &1264497596312914
+--- !u!1 &1464594875730094
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4159011189743772}
-  - component: {fileID: 114200275254583606}
+  - component: {fileID: 4709256840736902}
+  - component: {fileID: 114851930758495344}
   m_Layer: 0
-  m_Name: Hard Enemy Spawner
+  m_Name: Boss Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4159011189743772
+--- !u!4 &4709256840736902
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1264497596312914}
+  m_GameObject: {fileID: 1464594875730094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,25 +40,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114200275254583606
+--- !u!114 &114851930758495344
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1264497596312914}
+  m_GameObject: {fileID: 1464594875730094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 088708f1cd416094b9094714ece298e8, type: 3}
+  m_Script: {fileID: 11500000, guid: cafe1385b2662c043b774be67d463276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfigs:
-  - {fileID: 11400000, guid: 34276b6e6ec2df44abf4e68869e9abba, type: 2}
-  - {fileID: 11400000, guid: 460795918b85d9c4985ee978a7df5c6e, type: 2}
-  - {fileID: 11400000, guid: 35b89519f3a0cb847813c6a4b766a52c, type: 2}
-  - {fileID: 11400000, guid: 30efd59dbb76deb48b082c9b6bc052a5, type: 2}
-  - {fileID: 11400000, guid: 4ba1cbdab41593d48acc9e8fcb374648, type: 2}
-  - {fileID: 11400000, guid: c09fce72a1898d447a84f77d0214df80, type: 2}
-  spawnDelay: 2.5
-  activatesAtLevel: 3
+  - {fileID: 11400000, guid: ca252a431082b3a44a635ed28218b39f, type: 2}
+  spawnDelay: 5
+  activatesAtLevel: 5
   stopsAtLevel: 6
-  looping: 1
+  looping: 0

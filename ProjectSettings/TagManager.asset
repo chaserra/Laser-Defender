@@ -9,6 +9,7 @@ TagManager:
   - Health Pack
   - Enemy
   - Shield Pack
+  - Boss
   layers:
   - Default
   - TransparentFX
