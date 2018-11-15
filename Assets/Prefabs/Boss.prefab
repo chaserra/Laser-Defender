@@ -114,11 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d7603c83118c94c8b03486c39ae017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500000
-  scorePerKill: 5000000
+  health: 100000
+  scorePerKill: 1000001
   projectile: {fileID: 1143646564120360, guid: dd62b779093e8f847ba354bca76caa8b, type: 2}
   minTimeBetweenShots: 0.7
-  maxTimeBetweenShots: 3
+  maxTimeBetweenShots: 2
   projectileSpeed: 3
   powerUpDrop: []
   powerUpDropSpeed: 3.5

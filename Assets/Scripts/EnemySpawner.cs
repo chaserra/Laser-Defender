@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour {
     [SerializeField] int activatesAtLevel = 1;
     [SerializeField] int stopsAtLevel = 5;
     [SerializeField] bool looping = false;
+    int bossSpawnAtLaserLevel = 5;
 
     //Cached References
     Player player;
@@ -29,6 +30,7 @@ public class EnemySpawner : MonoBehaviour {
             for (int waveIndex = startingWave; waveIndex < waveConfigs.Count; waveIndex++) {
                 if(player.GetLaserLevel() >= stopsAtLevel) {
                     Debug.Log(gameObject.name + " Deactivated!");
+                    Destroy(gameObject);
                     yield break;
                 } else {
                     var currentWave = waveConfigs[waveIndex];
@@ -50,6 +52,4 @@ public class EnemySpawner : MonoBehaviour {
             yield return new WaitForSeconds(waveConfig.GetTimeBetweenSpawns());
         }
     }
-
-    //TODO Make boss spawn
 }

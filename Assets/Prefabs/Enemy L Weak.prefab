@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 900
-  scorePerKill: 750
+  scorePerKill: 350
   projectile: {fileID: 1717115009289256, guid: bb2218fe5d008414ab04512d7da4ac99, type: 2}
   minTimeBetweenShots: 1.3
   maxTimeBetweenShots: 2.5

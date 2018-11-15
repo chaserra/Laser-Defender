@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4709256840736902}
-  - component: {fileID: 114217784215978482}
+  - component: {fileID: 114851930758495344}
   m_Layer: 0
   m_Name: Boss Spawner
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114217784215978482
+--- !u!114 &114851930758495344
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1464594875730094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 088708f1cd416094b9094714ece298e8, type: 3}
+  m_Script: {fileID: 11500000, guid: cafe1385b2662c043b774be67d463276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfigs:
