@@ -29,4 +29,6 @@ public class MusicPlayer : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    //TODO add method to change music on boss spawn.
 }

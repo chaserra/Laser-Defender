@@ -123,7 +123,7 @@ MonoBehaviour:
   powerUpDrop:
   - {fileID: 1278493521466836, guid: 25da26255b74cb847b2096fcb381b7b6, type: 2}
   powerUpDropSpeed: 3.5
-  dropRate: 5
+  dropRate: 7
   explosionParticle: {fileID: 1519627711204672, guid: 1eac2b27a27a5a247b796fdacde77827,
     type: 2}
   durationOfExplosion: 1
