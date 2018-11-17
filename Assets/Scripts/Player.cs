@@ -211,7 +211,7 @@ public class Player : MonoBehaviour {
             }
         }
     }
-    //TODO Try to refactor powerups (add new class, much better)
+    //TODO Try to refactor powerups (much better if I add new class)
 
     private void PowerUpAddScore(PowerUps powerUp) {
         int pickupScore = powerUp.AddToScoreOnPickup();
