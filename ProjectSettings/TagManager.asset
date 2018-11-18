@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Shield Pack
   - Boss
+  - Music Player
   layers:
   - Default
   - TransparentFX

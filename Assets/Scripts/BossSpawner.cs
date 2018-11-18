@@ -8,23 +8,23 @@ public class BossSpawner : MonoBehaviour {
     int startingWave = 0;
     [SerializeField] float spawnDelay = 5f;
     [SerializeField] int activatesAtLevel = 5;
-    [SerializeField] int stopsAtLevel = 6;
-    [SerializeField] bool looping = false;
     [SerializeField] bool bossSpawned = false;
-    int bossSpawnAtLaserLevel = 5;
 
     //Cached References
     Player player;
+    MusicPlayer musicPlayer;
 
     // Use this for initialization
     private void Start() {
         player = FindObjectOfType<Player>();
+        musicPlayer = FindObjectOfType<MusicPlayer>();
     }
 
     private void Update() {
         if (player.GetLaserLevel() >= activatesAtLevel) {
             if(!bossSpawned) {
                 bossSpawned = true;
+                musicPlayer.ChangeMusic(1);
                 SpawnBoss();
             }
         }

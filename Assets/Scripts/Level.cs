@@ -19,6 +19,8 @@ public class Level : MonoBehaviour {
 
     public void PlayAgain() {
         SceneManager.LoadScene(1);
+        //FindObjectOfType<MusicPlayer>().InstantChangeMusic(0);
+        FindObjectOfType<MusicPlayer>().ResetMusic();
         FindObjectOfType<GameSession>().ResetGame();
     }
 
