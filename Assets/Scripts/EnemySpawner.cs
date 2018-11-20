@@ -10,7 +10,6 @@ public class EnemySpawner : MonoBehaviour {
     [SerializeField] int activatesAtLevel = 1;
     [SerializeField] int stopsAtLevel = 5;
     [SerializeField] bool looping = false;
-    int bossSpawnAtLaserLevel = 5;
 
     //Cached References
     Player player;
