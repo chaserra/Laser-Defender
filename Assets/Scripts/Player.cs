@@ -160,47 +160,15 @@ public class Player : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         PowerUps powerUp = other.gameObject.GetComponent<PowerUps>();
         if(other.tag == "Laser Powerup") {
-            if (laserLevel < maxLaserLevel) {
-                if (maxFireRate < projectileFiringPeriod - .01f) {
-                    powerUp.ObtainedPowerUp();
-                    projectileFiringPeriod -= .1f;
-                    PlaySFX(laserUpSFX, laserUpgradeVolume);
-                    return;
-                } else {
-                    laserLevel++;
-                    projectileFiringPeriod = .5f;
-                    PlaySFX(laserUpSFX, laserUpgradeVolume);
-                }
-            } else if (maxFireRate < projectileFiringPeriod - .01f) {
-                powerUp.ObtainedPowerUp();
-                projectileFiringPeriod -= .1f;
-                PlaySFX(laserUpSFX, laserUpgradeVolume);
-                return;
-            } else {
-                PowerUpAddScore(powerUp);
-                PlaySFX(getPointSFX, getPointVolume);
-            }
-            powerUp.ObtainedPowerUp();
+            ObtainLaserPowerUp(powerUp);
         } 
 
         if(other.tag == "Health Pack") {
-            if (health < maxHealth) {
-                health = health + powerUp.Heal();
-                PlaySFX(healSFX, healSoundVolume);
-                if(health > maxHealth) {
-                    health = maxHealth;
-                }
-            } else {
-                PowerUpAddScore(powerUp);
-                PlaySFX(getPointSFX, getPointVolume);
-            }
-            powerUp.ObtainedPowerUp();
+            ObtainHealthPack(powerUp);
         }
 
         if (other.tag == "Shield Pack") {
-            numberOfShields++;
-            PlaySFX(getPointSFX, getPointVolume);
-            powerUp.ObtainedPowerUp();
+            ObtainShieldPack(powerUp);
         } 
         
         else {
@@ -211,7 +179,50 @@ public class Player : MonoBehaviour {
             }
         }
     }
-    //TODO Try to refactor powerups (much better if a new class is added)
+
+    private void ObtainLaserPowerUp(PowerUps powerUp) {
+        if (laserLevel < maxLaserLevel) {
+            if (maxFireRate < projectileFiringPeriod - .01f) {
+                powerUp.ObtainedPowerUp();
+                projectileFiringPeriod -= .1f;
+                PlaySFX(laserUpSFX, laserUpgradeVolume);
+                return;
+            } else {
+                laserLevel++;
+                projectileFiringPeriod = .5f;
+                PlaySFX(laserUpSFX, laserUpgradeVolume);
+            }
+        } else if (maxFireRate < projectileFiringPeriod - .01f) {
+            powerUp.ObtainedPowerUp();
+            projectileFiringPeriod -= .1f;
+            PlaySFX(laserUpSFX, laserUpgradeVolume);
+            return;
+        } else {
+            PowerUpAddScore(powerUp);
+            PlaySFX(getPointSFX, getPointVolume);
+        }
+        powerUp.ObtainedPowerUp();
+    }
+
+    private void ObtainHealthPack(PowerUps powerUp) {
+        if (health < maxHealth) {
+            health = health + powerUp.Heal();
+            PlaySFX(healSFX, healSoundVolume);
+            if (health > maxHealth) {
+                health = maxHealth;
+            }
+        } else {
+            PowerUpAddScore(powerUp);
+            PlaySFX(getPointSFX, getPointVolume);
+        }
+        powerUp.ObtainedPowerUp();
+    }
+
+    private void ObtainShieldPack(PowerUps powerUp) {
+        numberOfShields++;
+        PlaySFX(getPointSFX, getPointVolume);
+        powerUp.ObtainedPowerUp();
+    }
 
     private void PowerUpAddScore(PowerUps powerUp) {
         int pickupScore = powerUp.AddToScoreOnPickup();
